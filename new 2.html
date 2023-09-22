@@ -2,6 +2,19 @@
 <head>
 	<title>Test</title>
 	<script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+    <style>.carousel-cell {
+        /* width: 66%; */
+        height: 200px;
+        margin-right: 10px;
+        background: #8C8;
+        border-radius: 5px;
+        counter-increment: gallery-cell;
+      }
+      </style>
+
 <body>
   <div class="bg-indigo-50">
     <header>
@@ -9,8 +22,12 @@
             <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
                 <a href="#" class="flex items-center"><span class="text-green-600 self-center text-3xl font-semibold whitespace-nowrap">Olympus</span></a>
                 <div class="flex items-center lg:order-2">
-                    <a href="#" class="text-gray-800 hover:bg-gray-50 focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2">Log in</a><a href="#" class="text-white bg-blue-700 hover:bg-blue-800 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2">Sign up now</a
-                    ><button type="button" class="inline-flex items-center p-2 ml-1 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200" aria-controls="mobile-menu-2" aria-expanded="false">
+                    <a href="#" class="text-gray-800 hover:bg-gray-50 focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2">Log in</a>
+                    <!-- <a href="#" class="text-white bg-blue-700 hover:bg-blue-800 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2">Sign up now</a
+                    > -->
+                    <a href="#" class="text-white bg-blue-700 hover:bg-blue-800 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2">Lawyers click here</a
+                    >
+                    <button type="button" class="inline-flex items-center p-2 ml-1 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200" aria-controls="mobile-menu-2" aria-expanded="false">
                         <span class="sr-only">Open main menu</span><svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg><svg class="hidden w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
                     </button>
                 </div>
@@ -39,11 +56,11 @@
         </div>
     </div>
 </div>
-<div class="bg-indigo-600 py-10 sm:py-10">
+<div class="bg-indigo-700 py-10 sm:py-10">
     <div class="mx-auto max-w-7xl px-6 lg:px-8">
         <div class="mx-auto max-w-2xl lg:text-center">
-            <h2 class="text-base font-semibold leading-7 text-indigo-200">Get Legal Assistance</h2>
-            <p class="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl">Find the Right Legal Services for Your Needs</p>
+            <h2 class="text-base font-semibold leading-7 text-yellow-500">Get Legal Assistance</h2>
+            <p class="mt-2 text-3xl font-bold tracking-tight text-yellow-500 sm:text-4xl">Find the Right Legal Services for Your Needs</p>
             <p class="mt-6 text-lg leading-8 text-indigo-200">Feature section description</p>
         </div>
         <div class="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-none">
@@ -58,16 +75,16 @@
                     </dd>
                 </div>
                 <div class="flex flex-col">
-                    <dt class="flex items-center gap-x-3 text-base font-semibold leading-7 text-white">Book an Appointment</dt>
+                    <dt class="flex items-center gap-x-3 text-base font-semibold leading-7 text-white">Find a Notary</dt>
                     <dd class="mt-4 flex flex-auto flex-col text-base leading-7 text-indigo-200">
-                        <p class="flex-auto">Schedule a consultation or appointment with a lawyer or notary</p>
+                        <p class="flex-auto">Hire experienced and verified government document writers</p>
                         <p class="mt-6">
                             <a href="#" class="text-sm font-semibold leading-6 text-white">Learn more <span aria-hidden="true">→</span></a>
                         </p>
                     </dd>
                 </div>
                 <div class="flex flex-col">
-                    <dt class="flex items-center gap-x-3 text-base font-semibold leading-7 text-white">Legal Document Templates</dt>
+                    <dt class="flex items-center gap-x-3 text-base font-semibold leading-7 text-white">Find Arbitraries/Mediators</dt>
                     <dd class="mt-4 flex flex-auto flex-col text-base leading-7 text-indigo-200">
                         <p class="flex-auto">Access a library of legal document templates for various purposes</p>
                         <p class="mt-6">
@@ -80,92 +97,64 @@
     </div>
 </div>
 <div class="bg-white py-24 sm:py-32">
-    <div class="mx-auto max-w-7xl px-6 lg:px-8">
-        <div class="mx-auto max-w-4xl sm:text-center">
-            <h2 class="text-base font-semibold leading-7 text-indigo-600">Affordable Legal Services</h2>
-            <p class="mt-2 text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">Choose the Right Plan for Your Legal Needs</p>
-        </div>
-        <p class="mx-auto mt-6 max-w-2xl text-lg leading-8 text-gray-600 sm:text-center">We offer flexible pricing plans to suit your budget and requirements.</p>
-        <div class="mt-20 flow-root">
-            <div class="isolate -mt-16 grid max-w-sm grid-cols-1 gap-y-16 divide-y divide-gray-100 sm:mx-auto lg:-mx-8 lg:mt-0 lg:max-w-none lg:grid-cols-3 lg:divide-x lg:divide-y-0 xl:-mx-4">
-                <div class="pt-16 lg:px-8 lg:pt-0 xl:px-14">
-                    <h3 class="text-base font-semibold leading-7 text-gray-900">Basic Plan</h3>
-                    <p class="mt-6 flex items-baseline gap-x-1">
-                        <span class="text-5xl font-bold tracking-tight text-gray-900">$10</span><span class="text-sm font-semibold leading-6 text-gray-600">/<!-- -->month</span>
-                    </p>
-                    <a href="#" class="mt-10 block rounded-md bg-indigo-600 px-3 py-2 text-center text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Get started</a>
-                    <p class="mt-10 text-sm font-semibold leading-6 text-gray-900">Ideal for individuals and small businesses</p>
-                    <ul role="list" class="mt-6 space-y-3 text-sm leading-6 text-gray-600">
-                        <li class="flex gap-x-3">
-                            <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>Access to legal advice
-                        </li>
-                        <li class="flex gap-x-3">
-                            <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>Document review
-                        </li>
-                        <li class="flex gap-x-3">
-                            <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>Contract drafting
-                        </li>
-                        <li class="flex gap-x-3">
-                            <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>Phone consultations
-                        </li>
-                        <li class="flex gap-x-3">
-                            <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>Email support
-                        </li>
-                    </ul>
-                </div>
-                <div class="pt-16 lg:px-8 lg:pt-0 xl:px-14">
-                    <h3 class="text-base font-semibold leading-7 text-gray-900">Pro Plan</h3>
-                    <p class="mt-6 flex items-baseline gap-x-1">
-                        <span class="text-5xl font-bold tracking-tight text-gray-900">$20</span><span class="text-sm font-semibold leading-6 text-gray-600">/<!-- -->month</span>
-                    </p>
-                    <a href="#" class="mt-10 block rounded-md bg-indigo-600 px-3 py-2 text-center text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Get started</a>
-                    <p class="mt-10 text-sm font-semibold leading-6 text-gray-900">Perfect for medium-sized businesses</p>
-                    <ul role="list" class="mt-6 space-y-3 text-sm leading-6 text-gray-600">
-                        <li class="flex gap-x-3">
-                            <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>All features from Basic Plan
-                        </li>
-                        <li class="flex gap-x-3">
-                            <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>Legal research
-                        </li>
-                        <li class="flex gap-x-3">
-                            <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>Representation in court
-                        </li>
-                        <li class="flex gap-x-3">
-                            <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>Negotiation support
-                        </li>
-                        <li class="flex gap-x-3">
-                            <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>24/7 priority support
-                        </li>
-                    </ul>
-                </div>
-                <div class="pt-16 lg:px-8 lg:pt-0 xl:px-14">
-                    <h3 class="text-base font-semibold leading-7 text-gray-900">Advanced Plan</h3>
-                    <p class="mt-6 flex items-baseline gap-x-1">
-                        <span class="text-5xl font-bold tracking-tight text-gray-900">$30</span><span class="text-sm font-semibold leading-6 text-gray-600">/<!-- -->month</span>
-                    </p>
-                    <a href="#" class="mt-10 block rounded-md bg-indigo-600 px-3 py-2 text-center text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Get started</a>
-                    <p class="mt-10 text-sm font-semibold leading-6 text-gray-900">Tailored for large corporations</p>
-                    <ul role="list" class="mt-6 space-y-3 text-sm leading-6 text-gray-600">
-                        <li class="flex gap-x-3">
-                            <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>All features from Pro Plan
-                        </li>
-                        <li class="flex gap-x-3">
-                            <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>Dedicated legal team
-                        </li>
-                        <li class="flex gap-x-3">
-                            <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>Customized legal solutions
-                        </li>
-                        <li class="flex gap-x-3">
-                            <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>On-site consultations
-                        </li>
-                        <li class="flex gap-x-3">
-                            <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>Emergency legal assistance
-                        </li>
-                    </ul>
-                </div>
+   <!--  ***Example** 
+    <div class="min-h-screen bg-gray-100 p-3 relative">
+         <div class="w-96 mx-auto" style="scroll-snap-type: x mandatory;">
+           
+            <div class="">
+               <input class="sr-only peer" type="radio" name="carousel" id="carousel-1" checked />
+               
+               <div
+                  class="w-96 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white rounded-lg shadow-lg transition-all duration-300 opacity-0 peer-checked:opacity-100 peer-checked:z-10 z-0">
+                  <img class="rounded-t-lg w-96 h-64" src="https://images.unsplash.com/photo-1628788835388-415ee2fa9576?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=384&q=80" alt="" />
+                  <div class="py-4 px-8">
+                     <h1 class="hover:cursor-pointer mt-2 text-gray-900 font-bold text-2xl tracking-tight">Lorem
+                        ipsum dolor sit amet consectetur adipisicing.
+                     </h1>
+                     <p class="hover:cursor-pointer py-3 text-gray-600 leading-6">Lorem ipsum dolor, sit amet
+                        consectetur adipisicing elit.
+                     </p>
+                  </div>
+                 
+                  <div class="absolute top-1/2 w-full flex justify-between z-20">
+                     <label for="carousel-3" class="inline-block text-red-600 cursor-pointer -translate-x-5 bg-white rounded-full shadow-md active:translate-y-0.5">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" viewBox="0 0 20 20" fill="currentColor">
+                           <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm.707-10.293a1 1 0 00-1.414-1.414l-3 3a1 1 0 000 1.414l3 3a1 1 0 001.414-1.414L9.414 11H13a1 1 0 100-2H9.414l1.293-1.293z" clip-rule="evenodd" />
+                        </svg>
+                     </label>
+                     <label for="carousel-2" class="inline-block text-red-600 cursor-pointer translate-x-5 bg-white rounded-full shadow-md active:translate-y-0.5">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" viewBox="0 0 20 20" fill="currentColor">
+                           <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-8.707l-3-3a1 1 0 00-1.414 1.414L10.586 9H7a1 1 0 100 2h3.586l-1.293 1.293a1 1 0 101.414 1.414l3-3a1 1 0 000-1.414z" clip-rule="evenodd" />
+                        </svg>
+                     </label>
+                  </div>
+               </div>
             </div>
+            
+         </div>
+      </div> -->
+
+
+      
+    <div class="carousel" data-flickity='{ "freeScroll": true }'>
+        <div class="carousel-cell">
+            <img class="rounded-t-lg w-96 h-64" src="https://images.unsplash.com/photo-1628718120482-07e03fe361dd?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=384&q=80" alt="" />
+        </div>
+        <div class="carousel-cell"> 
+            <img class="rounded-t-lg w-96 h-64" src="https://images.unsplash.com/photo-1628718120482-07e03fe361dd?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=384&q=80" alt="" />
+        </div>
+        <div class="carousel-cell">
+            <img class="rounded-t-lg w-96 h-64" src="https://images.unsplash.com/photo-1628718120482-07e03fe361dd?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=384&q=80" alt="" />
+        </div>
+        <div class="carousel-cell">
+            <img class="rounded-t-lg w-96 h-64" src="https://images.unsplash.com/photo-1628718120482-07e03fe361dd?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=384&q=80" alt="" />
+        </div>
+        <div class="carousel-cell">
+            <img class="rounded-t-lg w-96 h-64" src="https://images.unsplash.com/photo-1628718120482-07e03fe361dd?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=384&q=80" alt="" />
         </div>
     </div>
+
+
 </div>
 <div class="bg-indigo-600">
     <div class="px-6 py-24 sm:px-6 sm:py-32 lg:px-8">
